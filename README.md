@@ -1,7 +1,21 @@
-# Vue 3 + Vite
+## 大数据展示界面
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+----
+### 前端框架搭建
+```
+    ----vue3
+    ----vite4
+    ----vue-router4
+    ----pinia   (暂未接入)
+    ----naiveUI
+    ----高德地图API
+    ----自定义hooks
+    
+    2023.02.15 record
+    当前实施到了初级阶段，一共接入7个展示模块
+    包括动态数据、表格数据、扇形图、地图、折线图、仪表盘、动态数据排序
+```
+----
+## 展示界面图
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![img.png](img.png)
