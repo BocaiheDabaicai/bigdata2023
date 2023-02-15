@@ -1,0 +1,27 @@
+var trees = new AMap.ElasticMarker({
+    map:map,
+    position:[106.63527,26.645388],
+    zooms:[15.5,20],
+    styles:[{
+        icon:{
+            img:'https://a.amap.com/jsapi_demos/static/resource/img/trees.png',
+            size:[366,201],
+            ancher:[183,101],
+            imageSize:[865,1156],
+            imageOffset:[45,480],
+            fitZoom:20,
+            scaleFactor:2,
+            maxScale:2,
+            minScale:0.125
+        }
+    }],
+    zoomStyleMapping:{
+        14:0,
+        15:0,
+        16:0,
+        17:0,
+        18:0,
+        19:0,
+        20:0
+    }
+})
