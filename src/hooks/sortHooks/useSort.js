@@ -51,6 +51,10 @@ export default function () {
                 }
             },
         ],
+        tooltip: {
+            trigger: 'item',
+            formatter: '当前牛奶 <br/>{b} : {c}万'
+        },
         legend: {
             show: false,
             top: '30px',
