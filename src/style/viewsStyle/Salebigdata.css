@@ -18,7 +18,7 @@
 .leftTop{
     background-color: #39446b;
     width: 30%;
-    height: 10%;
+    height: 15%;
     border-radius: 5px;
     position: absolute;
     top:6%;
@@ -33,7 +33,7 @@
 .leftmid{
     background-color: #39446b;
     width: 30%;
-    height: 445px;
+    height: 45%;
     border-radius: 5px;
     position: absolute;
     top: 23%;
@@ -167,6 +167,14 @@
     top: 29%;
     border-radius: 5px;
     opacity: 0.96;
+}
+.tempChart{
+    position: relative;
+    margin: 0 auto;
+    left:3% ;
+    top: 7%;
+    width: 95%;
+    height: 92%;
 }
 .rightbottom{
     background: #39446b;

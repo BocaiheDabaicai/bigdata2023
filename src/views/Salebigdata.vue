@@ -77,7 +77,7 @@
       </n-grid>
     </div>
     <div class="rightmid">
-      <h2>1234</h2>
+      <e-chart class="tempChart" :option="testTemp"></e-chart>
     </div>
     <div class="rightbottom">
       <e-chart class="sortChart" :option="testSort"></e-chart>
@@ -93,6 +93,7 @@ import usePie from "../hooks/usePie.js";
 import useMap from "../hooks/useMap.js";
 import useStack from "../hooks/useStack.js";
 import useSort from "../hooks/sortHooks/useSort.js";
+import useTemp from "../hooks/useTemp.js";
 import {Time } from '@vicons/ionicons5';
 import '../style/viewsStyle/Salebigdata.css'
 
@@ -107,6 +108,8 @@ let testPie = usePie()
 let testMap = useMap()
 
 let testStack = useStack()
+
+let testTemp = useTemp()
 
 let testSort = useSort()
 

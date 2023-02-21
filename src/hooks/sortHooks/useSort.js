@@ -1,7 +1,7 @@
 import {ref} from 'vue'
 
 
-const countryColors = ['#4862A5', '#6664AD', '#8464B1', '#A064B2', '#BB62AF',]
+const countryColors = ['#4862A5', '#6664AD', '#8464B1', '#A064B2', '#BB62AF','#53577c']
 
 export default function () {
     let dataList=ref([
@@ -10,6 +10,7 @@ export default function () {
         {value:543,name: '爱克林',itemStyle:{color:countryColors[2]}},
         {value:534,name: '百利包',itemStyle:{color:countryColors[3]}},
         {value:888,name: '屋顶盒',itemStyle:{color:countryColors[4]}},
+        {value:401,name: '花都',itemStyle:{color:countryColors[5]}},
     ])
     let option = {
         title: {
@@ -28,11 +29,11 @@ export default function () {
             name:'当前排名',
             nameLocation:'start',
             type: 'category',
-            data: ['利乐', '八联杯', '爱克林', '百利包', '屋顶盒'],
+            data: ['利乐', '八联杯', '爱克林', '百利包', '屋顶盒','花都'],
             inverse: true,
             animationDuration: 300,
             animationDurationUpdate: 300,
-            max: 4, // only the largest 3 bars will be displayed
+            max: 5, // only the largest 3 bars will be displayed
             axisLine:{
                 onZero:false
             },
