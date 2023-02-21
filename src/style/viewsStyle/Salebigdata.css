@@ -12,37 +12,37 @@
     background-image: url("../../assets/logo.png");
     background-size: cover;
     width: 100%;
-    height: 61px;
-    left: 14px;
+    height: 10%;
+    /*left: 14px;*/
 }
 .leftTop{
     background-color: #39446b;
     width: 30%;
     height: 10%;
     border-radius: 5px;
-    position: relative;
-    top:50px;
-    left: 20px;
+    position: absolute;
+    top:6%;
+    left: 1%;
     text-align: center;
     opacity: 0.96;
 }
 .visionbox{
     width: 100%;
-    height: 6px;
+    height: 7%;
 }
 .leftmid{
     background-color: #39446b;
     width: 30%;
-    height: 52%;
+    height: 445px;
     border-radius: 5px;
-    position: relative;
-    top: 70px;
-    left: 20px;
+    position: absolute;
+    top: 23%;
+    left: 1%;
     text-align: center;
     opacity: 0.96;
 }
 .table{
-    background-color: seashell;
+    /*background-color: seashell;*/
     width: 90%;
     position: relative;
     margin: 0 auto;
@@ -87,11 +87,11 @@
 }
 .leftbottom{
     background: #39446b;
-    position: relative;
+    position: absolute;
     width: 30%;
-    height: 26%;
-    left: 20px;
-    top: 80px;
+    height: 27%;
+    left: 1%;
+    top: 70%;
     border-radius: 5px;
     opacity: 0.96;
 }
@@ -99,36 +99,38 @@
     width: 90%;
     height: 90%;
     margin: 0 auto;
-    top: 6px;
+    top: 2%;
     color: #a4c6ff;
 }
 .mid{
     background: #39446b;
-    position: relative;
-    width: 40%;
-    height: 520px;
+    position: absolute;
+    width: 39%;
+    height: 56%;
     border-radius: 5px;
-    left: 490px;
-    bottom: 80%;
+    left: 31.5%;
+    top: 12%;
     text-align: center;
     opacity: 0.96;
 }
 .midMap{
-    width: 95%;
-    height:92%;
+    top:0.5%;
+    width: 99%;
+    height:99%;
     margin: 0 auto;
 }
 .midbottom{
     background: #39446b;
     position: absolute;
-    width: 40%;
-    height: 27%;
-    left: 490px;
-    top: 600px;
+    width: 39%;
+    height: 27.5%;
+    left: 31.5%;
+    top: 70%;
     border-radius: 5px;
     opacity: 0.96;
 }
 .midstack{
+    margin: 0 auto;
     width: 95%;
     height:92%;
 }
@@ -137,8 +139,8 @@
     position: absolute;
     width: 26.4%;
     height: 22%;
-    left: 1115px;
-    top: 50px;
+    left: 71%;
+    top: 6%;
     border-radius: 5px;
     opacity: 0.96;
     text-align: center;
@@ -156,25 +158,31 @@
     color: #a4c6ff;
     font-family: Arial;
 }
-.right{
+.rightmid{
     background: #39446b;
     position: absolute;
     width: 26.4%;
-    height: 67.5%;
-    left: 1115px;
-    top: 255px;
+    height:40%;
+    left: 71%;
+    top: 29%;
+    border-radius: 5px;
+    opacity: 0.96;
+}
+.rightbottom{
+    background: #39446b;
+    position: absolute;
+    width: 26.4%;
+    height: 27%;
+    left: 71%;
+    top: 70%;
     border-radius: 5px;
     opacity: 0.96;
 }
 .sortChart{
     position: relative;
-    left:10px
-}
-.graph{
-    height: 500px;
-    width: 800px;
-}
-.chart{
-    height: 90%;
-    width: 90%;
+    margin: 0 auto;
+    left:3% ;
+    top: 7%;
+    width: 98%;
+    height: 98%;
 }

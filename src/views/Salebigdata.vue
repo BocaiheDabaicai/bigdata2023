@@ -25,27 +25,30 @@
       </n-row>
     </div>
     <div class="leftmid">
-      <n-gradient-text :size="28" color="#CBF7FF">
-        客户榜单
-      </n-gradient-text>
-      <div class="table">
-      <!--    280显示六行    -->
+      <div class="leftmiddetail">
+        <n-gradient-text :size="28" color="#CBF7FF">
+          客户榜单
+        </n-gradient-text>
+        <div class="table">
+          <!--    280显示六行    -->
           <n-data-table
               :columns="testTable.columns"
               :data="testTable.data"
               :bordered="false"
               :pagination="testTable.pagination"
-              :max-height="350"
+              :max-height="340"
           />
+        </div>
       </div>
+
     </div>
     <div class="leftbottom">
       <e-chart class="leftPie" :option="testPie"></e-chart>
     </div>
     <div class="mid">
-      <n-gradient-text :size="16" color="#CBF7FF">
-        实时大数据地图
-      </n-gradient-text>
+<!--      <n-gradient-text :size="16" color="#CBF7FF">-->
+<!--        实时大数据地图-->
+<!--      </n-gradient-text>-->
       <div class="midMap" id="midMap"></div>
     </div>
     <div class="midbottom">
@@ -73,7 +76,10 @@
         </n-gi>
       </n-grid>
     </div>
-    <div class="right">
+    <div class="rightmid">
+      <h2>1234</h2>
+    </div>
+    <div class="rightbottom">
       <e-chart class="sortChart" :option="testSort"></e-chart>
     </div>
   </div>

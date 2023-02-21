@@ -5,11 +5,11 @@ const countryColors = ['#4862A5', '#6664AD', '#8464B1', '#A064B2', '#BB62AF',]
 
 export default function () {
     let dataList=ref([
-        {value:221,itemStyle:{color:countryColors[0]}},
-        {value:432,itemStyle:{color:countryColors[1]}},
-        {value:543,itemStyle:{color:countryColors[2]}},
-        {value:534,itemStyle:{color:countryColors[3]}},
-        {value:888,itemStyle:{color:countryColors[4]}},
+        {value:221,name: '利乐',itemStyle:{color:countryColors[0]}},
+        {value:432,name: '八联杯',itemStyle:{color:countryColors[1]}},
+        {value:543,name: '爱克林',itemStyle:{color:countryColors[2]}},
+        {value:534,name: '百利包',itemStyle:{color:countryColors[3]}},
+        {value:888,name: '屋顶盒',itemStyle:{color:countryColors[4]}},
     ])
     let option = {
         title: {
@@ -22,7 +22,7 @@ export default function () {
             },
         },
         xAxis: {
-            max: 'dataMax'
+            max: 'dataMax',
         },
         yAxis: {
             name:'当前排名',
@@ -36,12 +36,11 @@ export default function () {
             axisLine:{
                 onZero:false
             },
-            offset:-5
+            // offset:-5
         },
         series: [
             {
                 realtimeSort: true,
-                name: 'X',
                 type: 'bar',
                 data: dataList.value,
                 label: {
@@ -56,7 +55,7 @@ export default function () {
             formatter: '当前牛奶 <br/>{b} : {c}万'
         },
         legend: {
-            show: false,
+            show: true,
             top: '30px',
             textStyle: {
                 color: '#a4c6ff'
