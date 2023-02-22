@@ -3,30 +3,75 @@
     <div class="company"></div>
     <div class="leftTop">
       <div class="visionbox"></div>
-      <n-row>
+      <n-row
+        style="text-align: center"
+      >
         <n-col :span="8">
-          <n-statistic label="统计数据">
+          <n-statistic label="牛奶销售">
             <n-icon>
-              <Time/>
+              <Water/>
             </n-icon>
             <n-number-animation :from="testData1[0]" :to="testData1[1]" :duration="1000"/>
           </n-statistic>
         </n-col>
         <n-col :span="8">
-          <n-statistic label="活跃用户">
+          <n-statistic label="销售次数">
+            <n-icon>
+              <ThumbsUpSharp/>
+            </n-icon>
             <n-number-animation :from="testData2[0]" :to="testData2[1]" :duration="1000"/>
           </n-statistic>
         </n-col>
         <n-col :span="8">
           <n-statistic label="总体销量">
+            <n-icon>
+              <BagHandleSharp/>
+            </n-icon>
             <n-number-animation :from="testData3[0]" :to="testData3[1]" :duration="1000"/>
           </n-statistic>
         </n-col>
       </n-row>
+      <n-divider>公司发展计划</n-divider>
+      <div class="timeLine">
+        <n-timeline
+            horizontal
+            :icon-size="20">
+          <n-timeline-item
+              type="default"
+              title="上市计划"
+              content="即将上市"
+              time="2023-02-15"
+          />
+          <n-timeline-item
+              type="warning"
+              title="全产业信息化"
+              content="计划部署中"
+              time="2023-03-01"
+          />
+          <n-timeline-item
+              type="success"
+              title="新销售计划"
+              content="稳定运行中"
+              time="2023-03-16"
+          />
+          <n-timeline-item
+              type="success"
+              title="信息化畜牧养殖"
+              content="计划中"
+              time="2023-03-26"
+          />
+          <n-timeline-item
+              type="info"
+              title="企业大发展"
+              content="正在筹备"
+              time="2023-04-03"
+          />
+        </n-timeline>
+      </div>
     </div>
     <div class="leftmid">
       <div class="leftmiddetail">
-        <n-gradient-text :size="28" color="#CBF7FF">
+        <n-gradient-text :size="14" color="#CBF7FF" style="font-weight: bold">
           客户榜单
         </n-gradient-text>
         <div class="table">
@@ -36,7 +81,7 @@
               :data="testTable.data"
               :bordered="false"
               :pagination="testTable.pagination"
-              :max-height="340"
+              :max-height="290"
           />
         </div>
       </div>
@@ -44,6 +89,14 @@
     </div>
     <div class="leftbottom">
       <e-chart class="leftPie" :option="testPie"></e-chart>
+      <hr style="border: 1px solid #7F94DC;"/>
+      <n-card class="leftbottomcard" title="销售区域排行">
+        <span>第一名 : 贵阳<br/></span>
+        <span>第二名 : 遵义<br/></span>
+        <span>第三名 : 安顺<br/></span>
+        <span>第四名 : 都匀<br/></span>
+        <p style="margin-top: 40%">统计时间:2023年02月</p>
+      </n-card>
     </div>
     <div class="mid">
 <!--      <n-gradient-text :size="16" color="#CBF7FF">-->
@@ -94,7 +147,7 @@ import useMap from "../hooks/useMap.js";
 import useStack from "../hooks/useStack.js";
 import useSort from "../hooks/sortHooks/useSort.js";
 import useTemp from "../hooks/useTemp.js";
-import {Time } from '@vicons/ionicons5';
+import {ThumbsUpSharp,Water,BagHandleSharp } from '@vicons/ionicons5';
 import '../style/viewsStyle/Salebigdata.css'
 
 let testData1 = useData(1000,2000)

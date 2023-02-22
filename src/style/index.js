@@ -4,7 +4,8 @@ import {
     NButton,NThing,NDivider,NCard,
     NGrid,NGridItem,NRow,NCol,
     NStatistic,NIcon,NNumberAnimation,
-    NDataTable,NProgress
+    NDataTable,NProgress,NTimeline,
+    NTimelineItem
 }from 'naive-ui'
 
 export default create({
@@ -14,6 +15,7 @@ export default create({
         NButton,NThing,NDivider,NCard,
         NGrid,NGridItem,NRow,NCol,
         NStatistic,NIcon,NNumberAnimation,
-        NDataTable,NProgress
+        NDataTable,NProgress,NTimeline,
+        NTimelineItem
     ]
 })

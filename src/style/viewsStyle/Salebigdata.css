@@ -18,25 +18,29 @@
 .leftTop{
     background-color: #39446b;
     width: 30%;
-    height: 15%;
+    height: 27%;
     border-radius: 5px;
     position: absolute;
-    top:6%;
+    top:6.5%;
     left: 1%;
-    text-align: center;
+    /*text-align: center;*/
     opacity: 0.96;
 }
 .visionbox{
     width: 100%;
     height: 7%;
 }
+.n-timeline{
+    margin-top: 1%;
+    margin-left: 3%;
+}
 .leftmid{
     background-color: #39446b;
     width: 30%;
-    height: 45%;
+    height: 38.4%;
     border-radius: 5px;
     position: absolute;
-    top: 23%;
+    top: 34%;
     left: 1%;
     text-align: center;
     opacity: 0.96;
@@ -89,27 +93,35 @@
     background: #39446b;
     position: absolute;
     width: 30%;
-    height: 27%;
+    height: 26%;
     left: 1%;
-    top: 70%;
+    top: 73%;
     border-radius: 5px;
     opacity: 0.96;
+    display: flex;
+    flex-direction: row;
+}
+.leftbottomcard{
+    width: 45%;
+    background: #39446b ;
+    max-width: 200px;
 }
 .leftPie{
     width: 90%;
     height: 90%;
     margin: 0 auto;
     top: 2%;
+    left: 4%;
     color: #a4c6ff;
 }
 .mid{
     background: #39446b;
     position: absolute;
     width: 39%;
-    height: 56%;
+    height: 60%;
     border-radius: 5px;
     left: 31.5%;
-    top: 12%;
+    top: 11%;
     text-align: center;
     opacity: 0.96;
 }
@@ -125,7 +137,7 @@
     width: 39%;
     height: 27.5%;
     left: 31.5%;
-    top: 70%;
+    top: 72%;
     border-radius: 5px;
     opacity: 0.96;
 }
@@ -180,7 +192,7 @@
     background: #39446b;
     position: absolute;
     width: 26.4%;
-    height: 27%;
+    height: 29%;
     left: 71%;
     top: 70%;
     border-radius: 5px;

@@ -43,6 +43,15 @@ export default function (){
             trigger: 'item',
             formatter: '{a} <br/>{b} : {c}万 ({d}%)'
         },
+        toolbox:{
+            show:true,
+            feature:{
+                dataView: { show: true, readOnly: false },
+                saveAsImage: { show:true }
+            },
+            left:'left',
+            bottom:'bottom'
+        },
         series: [
             {
                 name: '数据情况',

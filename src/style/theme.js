@@ -15,11 +15,14 @@ export default {
         thTextColor:'#a4c6ff',
         tdTextColor:'#a4c6ff',
         tdColorHover:'#3372d5',
-        borderRadius:'10px'
+        borderRadius:'10px',
+        fontSizeMedium:'14px'
     },
     Statistic:{
         labelTextColor:'#9CBFEC',
-        valueTextColor:'#9CBFEC'
+        valueTextColor:'#9CBFEC',
+        labelFontSize:'18px',
+        labelFontWeight:'550'
     },
     Progress:{
         textColorCircle:'#9CBFEC',
@@ -27,5 +30,14 @@ export default {
     Divider:{
         color:'#7F94DC',
         textColor:'#BB62AF'
-    }
+    },
+    Timeline:{
+        titleTextColor:'#00A1F2',
+        contentTextColor:'#EBFCFF'
+    },
+    Card:{
+        borderColor:'#39446b',
+        textColor:'#9CBFEC',
+        titleTextColor:'#A8DCFD'
+    },
 }
