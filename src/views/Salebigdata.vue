@@ -4,31 +4,36 @@
     <div class="leftTop">
       <div class="visionbox"></div>
       <n-row
-        style="text-align: center"
       >
         <n-col :span="8">
-          <n-statistic label="牛奶销售">
-            <n-icon>
-              <Water/>
-            </n-icon>
-            <n-number-animation :from="testData1[0]" :to="testData1[1]" :duration="1000"/>
-          </n-statistic>
+          <div class="leftTopNumber">
+            <n-statistic label="牛奶销售">
+              <n-icon>
+                <Water/>
+              </n-icon>
+              <n-number-animation :from="testData1[0]" :to="testData1[1]" :duration="1000"/>
+            </n-statistic>
+          </div>
         </n-col>
         <n-col :span="8">
-          <n-statistic label="销售次数">
-            <n-icon>
-              <ThumbsUpSharp/>
-            </n-icon>
-            <n-number-animation :from="testData2[0]" :to="testData2[1]" :duration="1000"/>
-          </n-statistic>
+          <div class="leftTopNumber">
+            <n-statistic label="销售次数">
+              <n-icon>
+                <ThumbsUpSharp/>
+              </n-icon>
+              <n-number-animation :from="testData2[0]" :to="testData2[1]" :duration="1000"/>
+            </n-statistic>
+          </div>
         </n-col>
         <n-col :span="8">
-          <n-statistic label="总体销量">
-            <n-icon>
-              <BagHandleSharp/>
-            </n-icon>
-            <n-number-animation :from="testData3[0]" :to="testData3[1]" :duration="1000"/>
-          </n-statistic>
+          <div class="leftTopNumber">
+            <n-statistic label="总体销量">
+              <n-icon>
+                <BagHandleSharp/>
+              </n-icon>
+              <n-number-animation :from="testData3[0]" :to="testData3[1]" :duration="1000"/>
+            </n-statistic>
+          </div>
         </n-col>
       </n-row>
       <n-divider>公司发展计划</n-divider>
@@ -71,32 +76,127 @@
     </div>
     <div class="leftmid">
       <div class="leftmiddetail">
-        <n-gradient-text :size="14" color="#CBF7FF" style="font-weight: bold">
+        <n-icon>
+          <AccessibilitySharp/>
+        </n-icon>
+        <text>
           客户榜单
-        </n-gradient-text>
-        <div class="table">
-          <!--    280显示六行    -->
-          <n-data-table
-              :columns="testTable.columns"
-              :data="testTable.data"
-              :bordered="false"
-              :pagination="testTable.pagination"
-              :max-height="290"
-          />
-        </div>
+        </text>
+      </div>
+
+      <div class="table">
+        <!--    280显示六行    -->
+        <n-data-table
+            :columns="testTable.columns"
+            :data="testTable.data"
+            :bordered="false"
+            :pagination="testTable.pagination"
+            :max-height="290"
+            striped
+        />
       </div>
 
     </div>
     <div class="leftbottom">
-      <e-chart class="leftPie" :option="testPie"></e-chart>
-      <hr style="border: 1px solid #7F94DC;"/>
-      <n-card class="leftbottomcard" title="销售区域排行">
-        <span>第一名 : 贵阳<br/></span>
-        <span>第二名 : 遵义<br/></span>
-        <span>第三名 : 安顺<br/></span>
-        <span>第四名 : 都匀<br/></span>
-        <p style="margin-top: 40%">统计时间:2023年02月</p>
-      </n-card>
+      <div class="iconHead">
+        <n-icon>
+          <PieChart/>
+        </n-icon>
+        <text style="margin-left: 7px">销售情况</text>
+      </div>
+      <div class="leftbottomBody">
+        <e-chart class="leftPie" :option="testPie"></e-chart>
+        <n-grid x-gap="12" :cols="2" style="width:70%;margin-bottom: 4%">
+          <n-gi>
+            <div class="leftbottomBox">
+              <n-icon>
+                <BagHandleSharp/>
+              </n-icon>
+              <text style="margin-left: 20%;">123</text><br/>
+              <div style="margin-top: -8%;">
+                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+              </div>
+            </div>
+          </n-gi>
+          <n-gi>
+            <div class="leftbottomBox">
+              <n-icon>
+                <BagHandleSharp/>
+              </n-icon>
+              <text style="margin-left: 20%;">123</text><br/>
+              <div style="margin-top: -8%;">
+                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+              </div>
+            </div>
+          </n-gi>
+          <n-gi>
+            <div class="leftbottomBox">
+              <n-icon>
+                <BagHandleSharp/>
+              </n-icon>
+              <text style="margin-left: 20%;">123</text><br/>
+              <div style="margin-top: -8%;">
+                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+              </div>
+            </div>
+          </n-gi>
+          <n-gi>
+            <div class="leftbottomBox">
+              <n-icon>
+                <BagHandleSharp/>
+              </n-icon>
+              <text style="margin-left: 20%;">123</text><br/>
+              <div style="margin-top: -8%;">
+                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+              </div>
+            </div>
+          </n-gi>
+          <n-gi>
+            <div class="leftbottomBox">
+              <n-icon>
+                <BagHandleSharp/>
+              </n-icon>
+              <text style="margin-left: 20%;">123</text><br/>
+              <div style="margin-top: -8%;">
+                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+              </div>
+            </div>
+          </n-gi>
+          <n-gi>
+            <div class="leftbottomBox">
+              <n-icon>
+                <BagHandleSharp/>
+              </n-icon>
+              <text style="margin-left: 20%;">123</text><br/>
+              <div style="margin-top: -8%;">
+                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+              </div>
+            </div>
+          </n-gi>
+          <n-gi>
+            <div class="leftbottomBox">
+              <n-icon>
+                <BagHandleSharp/>
+              </n-icon>
+              <text style="margin-left: 20%;">123</text><br/>
+              <div style="margin-top: -8%;">
+                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+              </div>
+            </div>
+          </n-gi>
+          <n-gi>
+            <div class="leftbottomBox">
+              <n-icon>
+                <BagHandleSharp/>
+              </n-icon>
+              <text style="margin-left: 20%;">123</text><br/>
+              <div style="margin-top: -8%;">
+                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+              </div>
+            </div>
+          </n-gi>
+        </n-grid>
+      </div>
     </div>
     <div class="mid">
 <!--      <n-gradient-text :size="16" color="#CBF7FF">-->
@@ -105,26 +205,60 @@
       <div class="midMap" id="midMap"></div>
     </div>
     <div class="midbottom">
+      <div class="iconHead">
+        <n-icon>
+          <BarChart/>
+        </n-icon>
+        <text style="margin-left: 7px">销售统计图</text>
+      </div>
       <e-chart class="midstack" :option="testStack"/>
     </div>
     <div class="rightTop">
       <n-grid x-gap="12" :cols="3">
         <n-gi>
-          <h2 class="rightTopText">当前销售额</h2>
-          <h3 class="rightTopScore"><n-number-animation :from="saleArray[0]" :to="saleArray[1]" :duration="1000"/></h3>
-          <h3 class="rightTopText">最佳销售地区</h3>
-          <h3 class="rightTopScore">贵阳</h3>
+          <n-space :size="0">
+            <div class="rightTopBox">
+              <n-statistic label="当前销售额">
+                <n-icon>
+                  <LogoUsd/>
+                </n-icon>
+                <n-number-animation :from="saleArray[0]" :to="saleArray[1]" :duration="1000"/>
+              </n-statistic>
+            </div>
+            <div class="rightTopBox">
+              <n-statistic label="最佳销售地区">
+                <n-icon>
+                  <Medal/>
+                </n-icon>
+                <text>贵阳</text>
+              </n-statistic>
+            </div>
+          </n-space>
         </n-gi>
         <n-gi>
-          <h2 class="rightTopText">目标销售额</h2>
-          <h3 class="rightTopScore">{{ saleArray[2] }}</h3>
-          <h3 class="rightTopText">最佳销量牛奶</h3>
-          <h3 class="rightTopScore">利乐纯</h3>
+          <n-space :size="0">
+            <div class="rightTopBox">
+              <n-statistic label="目标销售额">
+                <n-icon>
+                  <Wallet/>
+                </n-icon>
+                <text>{{ saleArray[2] }}</text>
+              </n-statistic>
+            </div>
+            <div class="rightTopBox">
+              <n-statistic label="最佳销量牛奶">
+                <n-icon>
+                  <Ribbon/>
+                </n-icon>
+                <text>利乐纯</text>
+              </n-statistic>
+            </div>
+          </n-space>
         </n-gi>
         <n-gi>
-          <h2 class="rightTopText">销售完成度</h2>
-          <div class="score">
-            <n-progress type="dashboard" gap-position="bottom" :percentage="arr" :color="'#60A2EA'"/>
+          <div class="rightTopBoxProgess">
+            <h2>销售完成度</h2>
+            <n-progress type="circle" gap-position="bottom" :percentage="arr" :color="'#449ee0'"/>
           </div>
         </n-gi>
       </n-grid>
@@ -147,7 +281,7 @@ import useMap from "../hooks/useMap.js";
 import useStack from "../hooks/useStack.js";
 import useSort from "../hooks/sortHooks/useSort.js";
 import useTemp from "../hooks/useTemp.js";
-import {ThumbsUpSharp,Water,BagHandleSharp } from '@vicons/ionicons5';
+import {ThumbsUpSharp,Water,BagHandleSharp,AccessibilitySharp,PieChart,BarChart,LogoUsd,Wallet,Ribbon,Medal } from '@vicons/ionicons5';
 import '../style/viewsStyle/Salebigdata.css'
 
 let testData1 = useData(1000,2000)

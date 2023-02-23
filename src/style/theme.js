@@ -9,31 +9,35 @@ export default {
         primaryColorSuppl:'#9A81B8',
     },
     DataTable:{
-        borderColor:'#48576b',
-        thColor:'#39446b',
-        tdColor:'#39446b',
-        thTextColor:'#a4c6ff',
-        tdTextColor:'#a4c6ff',
-        tdColorHover:'#3372d5',
+        // 字体颜色 #a4c6ff
+        borderColor:'#121526',
+        thColor:'#121526',
+        tdColor:'#121526',
+        thTextColor:'#bfcde7',
+        tdTextColor:'#bfcde7',
+        tdColorHover:'#3b65bd',
+        tdColorStriped:'#1a1e33',
         borderRadius:'10px',
         fontSizeMedium:'14px'
     },
     Statistic:{
-        labelTextColor:'#9CBFEC',
-        valueTextColor:'#9CBFEC',
+        labelTextColor:'#3361d5',
+        valueTextColor:'#74ddc4',
         labelFontSize:'18px',
         labelFontWeight:'550'
     },
     Progress:{
-        textColorCircle:'#9CBFEC',
+        railColor:'#2b435d',
+        textColorCircle:'#59bcf5',
+        fontSizeCircle:'22px'
     },
     Divider:{
-        color:'#7F94DC',
-        textColor:'#BB62AF'
+        color:'#475e9c',
+        textColor:'#dddee0',
     },
     Timeline:{
-        titleTextColor:'#00A1F2',
-        contentTextColor:'#EBFCFF'
+        titleTextColor:'#3361d5',
+        contentTextColor:'#74ddc4'
     },
     Card:{
         borderColor:'#39446b',

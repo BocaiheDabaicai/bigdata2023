@@ -6,7 +6,7 @@ export default function () {
             text: '前五大销售地区',
             left:'center',
             textStyle:{
-                color:'#a4c6ff'
+                color:'#bfcde7'
             },
         },
         tooltip: {
@@ -14,7 +14,7 @@ export default function () {
             axisPointer: {
                 type: 'cross',
                 label: {
-                    backgroundColor: '#bbe4ff'
+                    backgroundColor: '#bfcde7'
                 }
             }
         },
@@ -24,7 +24,7 @@ export default function () {
             align:'left',
             top:'30px',
             textStyle:{
-                color:'#a4c6ff'
+                color:'#bfcde7'
             },
         },
         toolbox: {},
@@ -75,7 +75,7 @@ export default function () {
                 name: '安顺',
                 type: 'line',
                 stack: 'Total',
-                areaStyle: {},
+                areaStyle:{},
                 emphasis: {
                     focus: 'series'
                 },
@@ -86,7 +86,7 @@ export default function () {
                 name: '凯里',
                 type: 'line',
                 stack: 'Total',
-                areaStyle: {},
+                areaStyle:{},
                 emphasis: {
                     focus: 'series'
                 },
@@ -99,9 +99,18 @@ export default function () {
                 stack: 'Total',
                 label: {
                     show: true,
-                    position: 'top'
+                    position: 'top',
+                    color:'#a4c6ff'
                 },
-                areaStyle: {},
+                itemStyle:{
+                    color:'#dd4ebf'
+                },
+                lineStyle:{
+                    color:'#8b74cf'
+                },
+                areaStyle: {
+                    color:'#3b3058'
+                },
                 emphasis: {
                     focus: 'series'
                 },
@@ -110,7 +119,7 @@ export default function () {
             }
         ],
         textStyle:{
-            color:'#a4c6ff'
+            color:'#bfcde7'
         },
     };
     return option
