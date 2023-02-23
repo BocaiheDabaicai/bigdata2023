@@ -19,7 +19,7 @@ export default function () {
             text: '贵阳牛奶销售排行',
             left:'center',
             textStyle: {
-                color: '#a4c6ff'
+                color: '#bfcde7'
             },
         },
         xAxis: {
@@ -59,7 +59,7 @@ export default function () {
             show: true,
             top: '30px',
             textStyle: {
-                color: '#a4c6ff'
+                color: '#bfcde7'
             }
         },
         animationDuration: 0,
@@ -82,7 +82,7 @@ export default function () {
             ]
         },
         textStyle: {
-            color: '#a4c6ff'
+            color: '#bfcde7'
         }
     };
 

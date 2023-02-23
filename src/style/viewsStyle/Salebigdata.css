@@ -2,7 +2,7 @@
 .main{
     width: 100%;
     height: 100%;
-    /*background: #12172a;*/
+    /*background: #000000;*/
     position: fixed;
     background-image: url("../../assets/background_blue.png");
     background-size: cover;
@@ -54,7 +54,7 @@
     height: 40%;
     margin-top: -2%;
     background-color: #12172a;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 .leftmid{
     /*background-color: #12172a;*/
@@ -234,7 +234,7 @@
     font-family: Arial;
 }
 .rightmid{
-    background: #39446b;
+    /*background: #39446b;*/
     position: absolute;
     width: 26.4%;
     height:40%;
@@ -243,29 +243,72 @@
     border-radius: 5px;
     opacity: 0.96;
 }
-.tempChart{
-    position: relative;
+.rightmidProgress{
+    background: #12172a;
+    width: 98%;
+    height: 39%;
+    color: #dddee0;
     margin: 0 auto;
-    left:3% ;
-    top: 7%;
-    width: 95%;
-    height: 92%;
+    text-align: center;
+    border-radius: 5px;
+}
+.rightmidProgressBody{
+    display: flex;
+    flex-direction: row;
+    /*margin-top: 1%;*/
+}
+.rightmidProgressBody text{
+    margin-top: 2%;
+    /*margin-right: 5%;*/
+    width: 60px;
+}
+.rightmidProgressBody .n-progress{
+    margin-top: 2%;
+}
+.rightmidProgressBodyNumber{
+    width: 55px;
+    margin-left: 9%;
+    color: #dddee0;
+}
+.rightmidChart{
+    /*background: #12172a;*/
+    width: 98%;
+    height: 100%;
+    color: #dddee0;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+.rightmidChartBody{
+    background: #12172a;
+    width: 200px;
+    height: 160px;
+    border-radius: 5px;
+}
+.tempChart{
+    /*position: relative;*/
+    margin: 0 auto;
+    /*left:3% ;*/
+    /*top: 7%;*/
+    width: 100%;
+    height: 100%;
 }
 .rightbottom{
-    background: #39446b;
+    /*background: #39446b;*/
     position: absolute;
     width: 26.4%;
-    height: 29%;
+    height: 26%;
     left: 71%;
-    top: 70%;
+    top: 72%;
     border-radius: 5px;
     opacity: 0.96;
 }
 .sortChart{
+    background: #12172a;
     position: relative;
     margin: 0 auto;
-    left:3% ;
-    top: 7%;
+    /*left:3% ;*/
+    /*top: 7%;*/
     width: 98%;
-    height: 98%;
+    height: 110%;
+    border-radius: 5px;
 }

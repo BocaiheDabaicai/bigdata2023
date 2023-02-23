@@ -264,9 +264,65 @@
       </n-grid>
     </div>
     <div class="rightmid">
-      <e-chart class="tempChart" :option="testTemp"></e-chart>
+      <div class="iconHead">
+        <n-icon>
+          <StatsChart/>
+        </n-icon>
+        <text style="margin-left: 7px">常低温占比分析</text>
+      </div>
+      <div class="rightmidProgress">
+        <div class="rightmidProgressBody">
+          <text>贵阳</text>
+          <n-progress type="line" :percentage="60" :indicator-placement="'inside'" unit="%" processing :color="'#58a1d5'"/>
+        </div>
+        <div class="rightmidProgressBody">
+          <text>遵义</text>
+          <n-progress type="line" :percentage="52" :indicator-placement="'inside'" processing :color="'#64c1e3'"/>
+        </div>
+        <div class="rightmidProgressBody">
+          <text>安顺</text>
+          <n-progress type="line" :percentage="33" :indicator-placement="'inside'" processing :color="'#86dbe1'"/>
+        </div>
+        <div class="rightmidProgressBody">
+          <text>铜仁</text>
+          <n-progress type="line" :percentage="29" :indicator-placement="'inside'" processing :color="'#a1cfad'"/>
+        </div>
+        <div class="rightmidProgressBody">
+          <div class="rightmidProgressBodyNumber">0</div>
+          <div class="rightmidProgressBodyNumber">0.20</div>
+          <div class="rightmidProgressBodyNumber">0.40</div>
+          <div class="rightmidProgressBodyNumber">0.60</div>
+          <div class="rightmidProgressBodyNumber">0.80</div>
+          <div class="rightmidProgressBodyNumber">1.00</div>
+        </div>
+      </div>
+      <n-divider>具体占比分析</n-divider>
+      <div class="rightmidChart">
+        <n-grid x-gap="12" :cols="3" style="width:80%;margin-bottom: 4%;margin-left: 2%">
+          <n-gi>
+            <div class="rightmidChartBody">
+              <e-chart class="tempChart" :option="testTemp"></e-chart>
+            </div>
+          </n-gi>
+          <n-gi>
+            <n-divider vertical style="margin-left: 80%;height: 100%;"/>
+          </n-gi>
+          <n-gi>
+            <div class="rightmidChartBody">
+              <e-chart class="tempChart" :option="testTemp"></e-chart>
+            </div>
+          </n-gi>
+        </n-grid>
+      </div>
+
     </div>
     <div class="rightbottom">
+      <div class="iconHead">
+        <n-icon>
+          <Analytics/>
+        </n-icon>
+        <text style="margin-left: 7px">常低温占比分析</text>
+      </div>
       <e-chart class="sortChart" :option="testSort"></e-chart>
     </div>
   </div>
@@ -281,7 +337,7 @@ import useMap from "../hooks/useMap.js";
 import useStack from "../hooks/useStack.js";
 import useSort from "../hooks/sortHooks/useSort.js";
 import useTemp from "../hooks/useTemp.js";
-import {ThumbsUpSharp,Water,BagHandleSharp,AccessibilitySharp,PieChart,BarChart,LogoUsd,Wallet,Ribbon,Medal } from '@vicons/ionicons5';
+import {ThumbsUpSharp,Water,BagHandleSharp,AccessibilitySharp,PieChart,BarChart,LogoUsd,Wallet,Ribbon,Medal,StatsChart,Analytics} from '@vicons/ionicons5';
 import '../style/viewsStyle/Salebigdata.css'
 
 let testData1 = useData(1000,2000)
