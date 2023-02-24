@@ -19,7 +19,7 @@
               <n-button @click="transfer('salebigdata')">销售大数据</n-button>
             </n-gi>
             <n-gi>
-              <n-button>牧场大数据</n-button>
+              <n-button @click="transfer('pasturebigdata')">牧场大数据</n-button>
             </n-gi>
             <n-gi>
               <n-button>xx大数据</n-button>

@@ -8,5 +8,10 @@ export default [
         name:'salebigdata',
         path:'/Salebigdata',
         component:()=>import('../views/Salebigdata.vue')
+    },
+    {
+        name:'pasturebigdata',
+        path:'/Pasturebigdata',
+        component:()=>import('../views/pasturebigdata.vue')
     }
 ]

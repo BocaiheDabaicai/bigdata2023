@@ -110,91 +110,92 @@
           <n-gi>
             <div class="leftbottomBox">
               <n-icon>
-                <BagHandleSharp/>
+                <StorefrontSharp/>
               </n-icon>
-              <text style="margin-left: 20%;">123</text><br/>
+              <text style="margin-left: 20%;">8231</text><br/>
               <div style="margin-top: -8%;">
-                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+                <text style="color: #bfc0c6;font-size: small">门店数量<span style="color: #9cc04c">(家)</span></text>
               </div>
             </div>
           </n-gi>
           <n-gi>
             <div class="leftbottomBox">
               <n-icon>
-                <BagHandleSharp/>
+                <Car/>
               </n-icon>
-              <text style="margin-left: 20%;">123</text><br/>
+              <text style="margin-left: 20%;">141</text><br/>
               <div style="margin-top: -8%;">
-                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+                <text style="color: #bfc0c6;font-size: small">配送奶车<span style="color: #9cc04c">(辆)</span></text>
               </div>
             </div>
           </n-gi>
           <n-gi>
             <div class="leftbottomBox">
               <n-icon>
-                <BagHandleSharp/>
+                <Tv/>
               </n-icon>
-              <text style="margin-left: 20%;">123</text><br/>
+              <text style="margin-left: 20%;">278</text><br/>
               <div style="margin-top: -8%;">
-                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+                <text style="color: #bfc0c6;font-size: small">互联网直播<span style="color: #9cc04c">(次)</span></text>
               </div>
             </div>
           </n-gi>
           <n-gi>
             <div class="leftbottomBox">
               <n-icon>
-                <BagHandleSharp/>
+                <TrendingUp/>
               </n-icon>
-              <text style="margin-left: 20%;">123</text><br/>
+              <text style="margin-left: 20%;">67%</text><br/>
               <div style="margin-top: -8%;">
-                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+                <text style="color: #bfc0c6;font-size: small">销售增长率<span style="color: #9cc04c">(%)</span></text>
               </div>
             </div>
           </n-gi>
           <n-gi>
             <div class="leftbottomBox">
               <n-icon>
-                <BagHandleSharp/>
+                <ThumbsUp/>
               </n-icon>
-              <text style="margin-left: 20%;">123</text><br/>
+              <text style="margin-left: 20%;">8991</text><br/>
               <div style="margin-top: -8%;">
-                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+                <text style="color: #bfc0c6;font-size: small">客户点赞<span style="color: #9cc04c">(次)</span></text>
               </div>
             </div>
           </n-gi>
           <n-gi>
             <div class="leftbottomBox">
               <n-icon>
-                <BagHandleSharp/>
+                <Warning/>
               </n-icon>
-              <text style="margin-left: 20%;">123</text><br/>
+              <text style="margin-left: 20%;">2</text><br/>
               <div style="margin-top: -8%;">
-                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+                <text style="color: #bfc0c6;font-size: small">客户投诉<span style="color: #9cc04c">(次)</span></text>
               </div>
             </div>
           </n-gi>
           <n-gi>
             <div class="leftbottomBox">
               <n-icon>
-                <BagHandleSharp/>
+                <Reader/>
               </n-icon>
-              <text style="margin-left: 20%;">123</text><br/>
+              <text style="margin-left: 20%;">271</text><br/>
               <div style="margin-top: -8%;">
-                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+                <text style="color: #bfc0c6;font-size: small">订单数量<span style="color: #9cc04c">(万)</span></text>
               </div>
             </div>
           </n-gi>
           <n-gi>
             <div class="leftbottomBox">
               <n-icon>
-                <BagHandleSharp/>
+                <Newspaper/>
               </n-icon>
-              <text style="margin-left: 20%;">123</text><br/>
+              <text style="margin-left: 20%;">58%</text><br/>
               <div style="margin-top: -8%;">
-                <text style="color: #bfc0c6;font-size: small">正在完成中<span style="color: #9cc04c">(箱)</span></text>
+                <text style="color: #bfc0c6;font-size: small">订单增长率<span style="color: #9cc04c">(%)</span></text>
               </div>
             </div>
           </n-gi>
+
         </n-grid>
       </div>
     </div>
@@ -337,7 +338,12 @@ import useMap from "../hooks/useMap.js";
 import useStack from "../hooks/useStack.js";
 import useSort from "../hooks/sortHooks/useSort.js";
 import useTemp from "../hooks/useTemp.js";
-import {ThumbsUpSharp,Water,BagHandleSharp,AccessibilitySharp,PieChart,BarChart,LogoUsd,Wallet,Ribbon,Medal,StatsChart,Analytics} from '@vicons/ionicons5';
+import {
+  ThumbsUpSharp,Water,BagHandleSharp,AccessibilitySharp,
+  PieChart,BarChart,LogoUsd,Wallet,Ribbon,Medal,StatsChart,
+  Analytics,StorefrontSharp,TrendingUp,Tv,Warning,ThumbsUp,
+  Reader,Car,Newspaper
+} from '@vicons/ionicons5';
 import '../style/viewsStyle/Salebigdata.css'
 
 let testData1 = useData(1000,2000)
