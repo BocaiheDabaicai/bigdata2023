@@ -37,6 +37,7 @@
 
 <script setup>
 import {useRouter} from 'vue-router'
+import '../style/viewsStyle/Start.css'
 
 const router = useRouter()
 
@@ -49,49 +50,5 @@ function transfer(position) {
 </script>
 
 <style scoped>
-.title{
-  text-align: center;
-  padding-top: 3%;
-  width: 100%;
-  height: 20%;
-}
-.n-list{
-  margin-top: 20px;
-}
-.n-button{
-  width: 95%;
-  height: 330px;
-  margin-left: 2%;
-  font-size: 32px;
-  color: #30a4c7;
-}
-.start{
-  width: 100%;
-  -webkit-animation: fade-in-top 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: fade-in-top 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-@-webkit-keyframes fade-in-top {
-  0% {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-in-top {
-  0% {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+
 </style>
