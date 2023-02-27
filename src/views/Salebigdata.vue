@@ -204,6 +204,9 @@
 <!--        实时大数据地图-->
 <!--      </n-gradient-text>-->
       <div class="midMap" id="midMap"></div>
+      <div style="position: absolute;margin-top: -200px">
+        <text style="color: white">1234</text>
+      </div>
     </div>
     <div class="midbottom">
       <div class="iconHead">

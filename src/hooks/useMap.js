@@ -2,17 +2,12 @@ import {reactive, ref} from "vue";
 import mapStart from "./mapHooks/mapStart.js";
 
 export default function (){
-    let Goption=reactive({
-        center:[106.62896,26.642634],
-        zoom:4,
-        mapStyle: 'amap://styles/blue',
-    })
+    // 获取地图属性
+    let map = mapStart()
 
-    mapStart(Goption)
+    console.log(map)
 
-
-
-    return Goption
+    return map
 }
 
 
