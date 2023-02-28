@@ -39,6 +39,11 @@ export default {
         titleTextColor:'#3361d5',
         contentTextColor:'#74ddc4'
     },
+    Dropdown:{
+        optionTextColor:'#74ddc4',
+        color:'#12172a',
+        optionColorHover:'#3f8ede'
+    },
     Card:{
         borderColor:'#39446b',
         textColor:'#9CBFEC',

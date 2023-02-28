@@ -5,7 +5,7 @@ import {
     NGrid,NGridItem,NRow,NCol,
     NStatistic,NIcon,NNumberAnimation,
     NDataTable,NProgress,NTimeline,
-    NTimelineItem,NSpace
+    NTimelineItem,NSpace,NDropdown
 }from 'naive-ui'
 
 export default create({
@@ -16,6 +16,6 @@ export default create({
         NGrid,NGridItem,NRow,NCol,
         NStatistic,NIcon,NNumberAnimation,
         NDataTable,NProgress,NTimeline,
-        NTimelineItem,NSpace
+        NTimelineItem,NSpace,NDropdown
     ]
 })

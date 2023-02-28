@@ -1,7 +1,7 @@
 <template>
   <div class="main">
-    <div class="company"></div>
-    <div class="leftTop">
+    <div v-show="true" class="company"></div>
+    <div v-show="true" class="leftTop">
       <div class="visionbox"></div>
       <n-row
       >
@@ -74,7 +74,7 @@
         </n-timeline>
       </div>
     </div>
-    <div class="leftmid">
+    <div v-show="true" class="leftmid">
       <div class="leftmiddetail">
         <n-icon>
           <AccessibilitySharp/>
@@ -97,7 +97,7 @@
       </div>
 
     </div>
-    <div class="leftbottom">
+    <div v-show="true" class="leftbottom">
       <div class="iconHead">
         <n-icon>
           <PieChart/>
@@ -203,12 +203,14 @@
 <!--      <n-gradient-text :size="16" color="#CBF7FF">-->
 <!--        实时大数据地图-->
 <!--      </n-gradient-text>-->
-      <div class="midMap" id="midMap"></div>
-      <div style="position: absolute;margin-top: -200px">
-        <text style="color: white">1234</text>
+      <div class="menu">
+        <n-dropdown trigger="hover" :options="options" @select="handleSelect">
+          <n-button color="#12172a" style="color: #74ddc4" >菜单</n-button>
+        </n-dropdown>
       </div>
+      <div class="midMap" id="midMap"></div>
     </div>
-    <div class="midbottom">
+    <div v-show="true" class="midbottom">
       <div class="iconHead">
         <n-icon>
           <BarChart/>
@@ -217,7 +219,7 @@
       </div>
       <e-chart class="midstack" :option="testStack"/>
     </div>
-    <div class="rightTop">
+    <div v-show="true" class="rightTop">
       <n-grid x-gap="12" :cols="3">
         <n-gi>
           <n-space :size="0">
@@ -267,7 +269,7 @@
         </n-gi>
       </n-grid>
     </div>
-    <div class="rightmid">
+    <div v-show="true" class="rightmid">
       <div class="iconHead">
         <n-icon>
           <StatsChart/>
@@ -320,7 +322,7 @@
       </div>
 
     </div>
-    <div class="rightbottom">
+    <div v-show="true" class="rightbottom">
       <div class="iconHead">
         <n-icon>
           <Analytics/>
@@ -337,6 +339,7 @@ import {ref} from "vue";
 import useData from "../hooks/useData.js";
 import useTable from "../hooks/useTable.js";
 import usePie from "../hooks/usePie.js";
+import useMenu from "../hooks/useMenu.js";
 import useMap from "../hooks/useMap.js";
 import useStack from "../hooks/useStack.js";
 import useSort from "../hooks/sortHooks/useSort.js";
@@ -356,6 +359,8 @@ let testData3 = useData(9000,2000)
 let testTable = useTable()
 
 let testPie = usePie()
+
+let {options,handleClick,handleSelect} = useMenu()
 
 let testMap = useMap()
 

@@ -37,13 +37,14 @@ export default function () {
     })
 
     // 数据动态演示
+    let i = 0
     setInterval(()=>{
-        let i = 0
         list.data.map((item)=>{
             item.sale += Math.floor(Math.random()*100)
             i++
         })
-        if(i===350){
+        // console.log(i)
+        if(i>=500){
             let tempData = list.data
             list.data = list.extraData
             list.extraData = tempData
