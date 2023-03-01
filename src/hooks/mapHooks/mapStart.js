@@ -5,10 +5,11 @@ import provinceIcon from "./components/provinceIcon.js";
 import provinceLine from "./components/provinceLine.js";
 import headquarters from "./components/headquarters.js";
 import milkPath from "./components/milkPath.js";
-import carIcon from "./components/carIcon.js";
 import mapCover from "./components/mapCover.js";
+import milkCar from "./components/milkCar.js";
 //------------------Event-------------------------
 import mapScale from "../mapEvents/mapScale.js";
+
 
 export default function () {
 
@@ -17,7 +18,7 @@ export default function () {
         "version": "2.0",   // 指定要加载的 JSAPI 的版本，缺省时默认为 1.4.15
         "plugins": ['AMap.LabelsLayer','AMap.Driving','AMap.Polyline',
             'AMap.LngLat','AMap.InfoWindow','AMap.Marker','AMap.Icon',
-            'AMap.GeoJSON'],           // 需要使用的的插件列表，如比例尺'AMap.Scale'等
+            'AMap.GeoJSON','AMap.LabelMarker','AMap.Size'],           // 需要使用的的插件列表，如比例尺'AMap.Scale'等
     }).then((AMap)=>{
 
         let map = new AMap.Map('midMap',{
@@ -32,7 +33,7 @@ export default function () {
         provinceIcon(map)
         provinceLine(map)
         headquarters(map)
-        // carIcon(map)
+        milkCar(map)
         mapCover(map)
         // mapScale(map)
         /*

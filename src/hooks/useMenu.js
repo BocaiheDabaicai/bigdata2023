@@ -1,9 +1,6 @@
 import {reactive,ref} from "vue";
-// import { useMessage } from "naive-ui";
 
 export default function () {
-    // const message = useMessage();
-    const showDropDownRef = ref(false)
     let options = reactive([
         {
             label: "显示车辆",
@@ -44,10 +41,7 @@ export default function () {
             }
         })
     }
-    function handleClick() {
-        showDropDownRef.value = !showDropDownRef.value;
-    }
 
-    return {options,handleSelect,handleClick}
+    return {options,handleSelect}
 }
 

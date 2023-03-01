@@ -34,15 +34,15 @@ export default function (map) {
         map.add(polyline);
     })
 
-    setInterval(()=>{
-        if(map.getZoom()>6){
-            listObject.forEach((item)=>{
-                item.hide()
-            })
-        }else {
-            listObject.forEach((item)=>{
-                item.show()
-            })
-        }
-    },1000)
+    // setInterval(()=>{
+    //     if(map.getZoom()>6){
+    //         listObject.forEach((item)=>{
+    //             item.hide()
+    //         })
+    //     }else {
+    //         listObject.forEach((item)=>{
+    //             item.show()
+    //         })
+    //     }
+    // },1000)
 }

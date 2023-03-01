@@ -360,7 +360,7 @@ let testTable = useTable()
 
 let testPie = usePie()
 
-let {options,handleClick,handleSelect} = useMenu()
+let {options,handleSelect} = useMenu()
 
 let testMap = useMap()
 

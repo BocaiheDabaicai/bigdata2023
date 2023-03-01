@@ -1,13 +1,10 @@
-import {reactive, ref} from "vue";
 import mapStart from "./mapHooks/mapStart.js";
 
 export default function (){
     // 获取地图属性
-    let map = mapStart()
+    // console.log(map)
 
-    console.log(map)
-
-    return map
+    return mapStart()
 }
 
 
