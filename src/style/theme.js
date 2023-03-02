@@ -42,7 +42,7 @@ export default {
     Dropdown:{
         optionTextColor:'#74ddc4',
         color:'#12172a',
-        optionColorHover:'#3f8ede'
+        optionColorHover:'#60a7df'
     },
     Card:{
         borderColor:'#39446b',
