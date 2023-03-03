@@ -1,43 +1,68 @@
 import {reactive,ref} from "vue";
+import {useMessage} from "naive-ui";
 
 export default function () {
+    const message = useMessage()
     let options = reactive([
         {
             label: "显示车辆",
             key: "carOpen",
-            show:true
-        },
-        {
-            label: "隐藏车辆",
-            key: "carClose",
-            show:false
+            props:{
+                onClick:()=>{
+                    // 连接地图
+                    message.success("数据展示成功！")
+                }
+            },
+            optionLabel:true
         },
         {
             label: "显示奶点",
-            key: "milkOpen"
+            key: "milkOpen",
+            props:{
+                onClick:()=>{
+                    message.success("数据展示成功！")
+                }
+            },
+            optionLabel:true
         },
         {
             label: "显示销售板块",
-            key: "saleOpen"
+            key: "saleOpen",
+            props:{
+                onClick:()=>{
+                    message.success("数据展示成功！")
+                }
+            },
+            optionLabel:true
         },
         {
             label: "显示热力图",
-            key: "hotOpen"
+            key: "hotOpen",
+            props:{
+                onClick:()=>{
+                    message.success("数据展示成功！")
+                }
+            },
+            optionLabel:true
         },
         {
             label: "全屏展示",
-            key: "fullScreen"
+            key: "fullScreen",
+            props:{
+                onClick:()=>{
+                    message.success("数据展示成功！")
+                }
+            },
+            optionLabel:true
         }
     ])
 
     function handleSelect(key) {
-        // message.info(String(key));
-        // console.log(String(key).substring(0,3))
-        // console.log(options)
         options.map((item)=>{
-            console.log(item)
-            if(item.key === key){
-                console.log('we find it')
+            if(item.key === key && key!== "fullScreen"){
+                item.optionLabel = !item.optionLabel
+                item.label = (item.optionLabel?"显示":"隐藏")+item.label.substring(2)
+                console.log(item)
             }
         })
     }

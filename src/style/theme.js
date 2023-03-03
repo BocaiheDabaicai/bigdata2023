@@ -49,4 +49,10 @@ export default {
         textColor:'#9CBFEC',
         titleTextColor:'#A8DCFD'
     },
+    Message:{
+        colorSuccess:"#12172a",
+        colorError:"#12172a",
+        textColorSuccess:"#74DDC4FF",
+        textColorError:"#74DDC4FF"
+    }
 }

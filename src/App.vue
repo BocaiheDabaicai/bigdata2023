@@ -4,7 +4,9 @@ import themeOverrides from './style/theme.js'
 
 <template>
     <n-config-provider :theme-overrides="themeOverrides">
-      <router-view></router-view>
+      <n-message-provider>
+        <router-view></router-view>
+      </n-message-provider>
     </n-config-provider>
 </template>
 

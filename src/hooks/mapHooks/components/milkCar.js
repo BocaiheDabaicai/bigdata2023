@@ -109,7 +109,7 @@ export default function (map) {
         let infoWindow = new AMap.InfoWindow({
             isCustom: true,  //使用自定义窗体
             content: createInfoWindow(title, picture, message),
-            offset: new AMap.Pixel(16, 80)
+            offset: new AMap.Pixel(16, -20)
         });
         //构建自定义信息窗体
         function createInfoWindow(title, picture, message) {
