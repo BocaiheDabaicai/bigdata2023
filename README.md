@@ -69,3 +69,33 @@
 ## 展示界面图（第一期）
 
 ![img.png](picture/panel_one.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 收获内容
+
+----------
+> <h3>配置淘宝镜像</h3>
+> 单次使用淘宝镜像获取包<br>
+> npm install --registry=http://registry.npmmirror.com （库名）<br>
+> 永久性配置淘宝镜像 <br>
+> npm install -g cnpm --registry=http://registry.npmmirror.com <br>
+> <h3>export与export default</h3>
+> export与export default均可用于导出常量、函数、文件、模块等 <br>
+>在一个文件或模块中，export、import可以有多个，export default仅有一个 <br>
+>通过export方式导出，在导入时要加{ }，export default则不需要，并可以起任意名称 <br>
