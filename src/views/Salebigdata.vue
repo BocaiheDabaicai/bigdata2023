@@ -354,8 +354,7 @@ import '../style/viewsStyle/Salebigdata.css'
 //-----
 import useTestStore from "../../storage/saleBigData/useTestStore.js";
 const testCon = useTestStore()
-const a = testCon.result
-testCon.inputResult(a)
+testCon.inputResult()
 //-----
 
 let testData1 = useData(1000,2000)

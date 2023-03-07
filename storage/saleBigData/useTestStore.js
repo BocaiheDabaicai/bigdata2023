@@ -3,17 +3,15 @@ import {reactive,computed} from "vue";
 
 export default defineStore('test',()=>{
     const arrList = reactive([1,2,3,4,5])
-    const result = computed(()=>{
-        console.log("computed被使用")
-        arrList.forEach((item)=> {
-            console.log(item," 被使用")
-            item++
-            console.log(item)
+    function inputResult(){
+        let a = arrList.map(item=>{
+            return item = item + 1
         })
-    })
-    function inputResult(data){
-        console.log("pinia result is : ",data)
+        // for(let i=0;i<arrList.value.length;i++){
+        //     arrList.value[i]++
+        // }
+        console.log("pinia result is : ",a)
     }
 
-    return {arrList,result,inputResult}
+    return {arrList,inputResult}
 })
