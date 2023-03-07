@@ -3,6 +3,7 @@ import App from './App.vue'
 import naive from './style/index.js'
 import router from './router/index.js'
 import ECharts from 'vue-echarts'
+import {createPinia} from "pinia";
 import './style/global.css'
 import 'echarts'
 
@@ -16,9 +17,10 @@ import 'echarts'
 // echarts.registerMap('guizhou',guizhouJson)
 
 const app = createApp(App)
-
+const pinia = createPinia()
 app.component('e-chart',ECharts)
 
 app.use(naive)
 app.use(router)
+app.use(pinia)
 app.mount('#app')

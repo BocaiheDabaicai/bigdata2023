@@ -351,6 +351,12 @@ import {
   Reader,Car,Newspaper
 } from '@vicons/ionicons5';
 import '../style/viewsStyle/Salebigdata.css'
+//-----
+import useTestStore from "../../storage/saleBigData/useTestStore.js";
+const testCon = useTestStore()
+const a = testCon.result
+testCon.inputResult(a)
+//-----
 
 let testData1 = useData(1000,2000)
 let testData2 = useData(5000,2000)
