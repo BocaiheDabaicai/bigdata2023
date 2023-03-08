@@ -11,7 +11,7 @@
               <n-icon>
                 <Water/>
               </n-icon>
-              <n-number-animation :from="testData1[0]" :to="testData1[1]" :duration="1000"/>
+              <n-number-animation :from="milkData[0]" :to="milkData[1]" :duration="1000"/>
             </n-statistic>
           </div>
         </n-col>
@@ -21,7 +21,7 @@
               <n-icon>
                 <ThumbsUpSharp/>
               </n-icon>
-              <n-number-animation :from="testData2[0]" :to="testData2[1]" :duration="1000"/>
+              <n-number-animation :from="saleData[0]" :to="saleData[1]" :duration="1000"/>
             </n-statistic>
           </div>
         </n-col>
@@ -31,7 +31,7 @@
               <n-icon>
                 <BagHandleSharp/>
               </n-icon>
-              <n-number-animation :from="testData3[0]" :to="testData3[1]" :duration="1000"/>
+              <n-number-animation :from="totalData[0]" :to="totalData[1]" :duration="1000"/>
             </n-statistic>
           </div>
         </n-col>
@@ -351,15 +351,10 @@ import {
   Reader,Car,Newspaper
 } from '@vicons/ionicons5';
 import '../style/viewsStyle/Salebigdata.css'
-//-----
-import useTestStore from "../../storage/saleBigData/useTestStore.js";
-const testCon = useTestStore()
-testCon.inputResult()
-//-----
 
-let testData1 = useData(1000,2000)
-let testData2 = useData(5000,2000)
-let testData3 = useData(9000,2000)
+let milkData = useData(1000,1000)
+let saleData = useData(300,1000)
+let totalData = useData(3000,1000)
 
 let testTable = useTable()
 

@@ -1,12 +1,14 @@
 import {ref} from "vue";
+import useTotalStore from "../storage/saleBigData/useTotalStore.js";
 
-export default function (range,refTime){
-    let testData = ref([0,0])
-
+export default function (range,time){
+    const totalData = useTotalStore()
+    let tempData = ref([0,0])
     setInterval(()=>{
-        testData.value[0] = testData.value[1]
-        testData.value[1] += Math.floor(Math.random()*range)
-    },refTime)
-
-    return testData
+        totalData.updateData(range)
+        console.log("useData :",totalData.presentData,totalData.targetData)
+        tempData.value[0]=totalData.presentData
+        tempData.value[1]=totalData.targetData
+    },time)
+    return tempData
 }
