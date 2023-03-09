@@ -23,7 +23,7 @@ export default function () {
 
         let map = new AMap.Map('midMap',{
             center:[105.381839,37.996769],
-            zoom:6,
+            zoom:4,
             mapStyle: 'amap://styles/blue',
         });
         // 106.623487,26.634874
@@ -31,7 +31,7 @@ export default function () {
         milkIcon(map)
         // milkPath(map)
         provinceIcon(map)
-        provinceLine(map)
+        // provinceLine(map)
         headquarters(map)
         milkCar(map)
         mapCover(map)

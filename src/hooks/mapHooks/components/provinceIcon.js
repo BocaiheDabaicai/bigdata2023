@@ -7,18 +7,18 @@ export default function (map) {
         // 图标类型，现阶段只支持 image 类型
         type: 'image',
         // 图片 url
-        image: getImageUrl('../assets/mapMaterial/province.png'),
+        image: getImageUrl('../assets/mapMaterial/mapPointer.png'),
         // 图片尺寸
-        size: [24, 24],
+        size: [12, 12],
         // 图片相对 position 的锚点，默认为 bottom-center
         anchor: 'center',
     };
     let textStyle = {
-        fontSize: 14,
+        fontSize: 13,
         fontWeight: 'normal',
         fontFamily:'得意黑',
-        fillColor: '#9CBFEC',
-        strokeColor: '#99A0D5',
+        fillColor: '#cedadb',
+        strokeColor: '#71A5C4',
         strokeWidth: 1,
         fold: true,
         padding: '2, 5',
@@ -37,26 +37,16 @@ export default function (map) {
             opacity: 1,
             zIndex: 10,
             fold: true,
+            icon,
             text: {
                 // 要展示的文字内容
                 content: '贵州',
                 // 文字方向，有 icon 时为围绕文字的方向，没有 icon 时，则为相对 position 的位置
                 direction: 'bottom-center',
                 // 在 direction 基础上的偏移量
-                offset: [-10, -5],
+                offset: [-7, 22],
                 // 文字样式
-                style: {
-                    fontSize: 18,
-                    fontWeight: 'normal',
-                    fontFamily:'得意黑',
-                    fillColor: '#A8DCFD',
-                    strokeColor: '#71A5C4',
-                    strokeWidth: 1,
-                    fold: true,
-                    padding: '2, 5',
-                    backgroundColor:'',
-
-                }
+                style: textStyle
             },
         },
         {
@@ -66,13 +56,14 @@ export default function (map) {
             opacity: 1,
             zIndex: 10,
             fold: true,
+            icon,
             text: {
                 // 要展示的文字内容
                 content: '重庆',
                 // 文字方向，有 icon 时为围绕文字的方向，没有 icon 时，则为相对 position 的位置
                 direction: 'bottom-center',
                 // 在 direction 基础上的偏移量
-                offset: [-10, -5],
+                offset: [-7, 22],
                 // 文字样式
                 style: textStyle
             },
@@ -84,13 +75,14 @@ export default function (map) {
             opacity: 1,
             zIndex: 10,
             fold: true,
+            icon,
             text: {
                 // 要展示的文字内容
                 content: '云南',
                 // 文字方向，有 icon 时为围绕文字的方向，没有 icon 时，则为相对 position 的位置
                 direction: 'bottom-center',
                 // 在 direction 基础上的偏移量
-                offset: [-10, -5],
+                offset: [-7, 22],
                 // 文字样式
                 style: textStyle
             },
@@ -102,13 +94,14 @@ export default function (map) {
             opacity: 1,
             zIndex: 10,
             fold: true,
+            icon,
             text: {
                 // 要展示的文字内容
                 content: '广西',
                 // 文字方向，有 icon 时为围绕文字的方向，没有 icon 时，则为相对 position 的位置
                 direction: 'bottom-center',
                 // 在 direction 基础上的偏移量
-                offset: [-10, -5],
+                offset: [-7, 22],
                 // 文字样式
                 style: textStyle
             },
@@ -120,13 +113,14 @@ export default function (map) {
             opacity: 1,
             zIndex: 10,
             fold: true,
+            icon,
             text: {
                 // 要展示的文字内容
                 content: '湖南',
                 // 文字方向，有 icon 时为围绕文字的方向，没有 icon 时，则为相对 position 的位置
                 direction: 'bottom-center',
                 // 在 direction 基础上的偏移量
-                offset: [-10, -5],
+                offset: [-7, 22],
                 // 文字样式
                 style: textStyle
             },

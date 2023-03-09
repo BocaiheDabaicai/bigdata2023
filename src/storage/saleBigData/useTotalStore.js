@@ -8,9 +8,9 @@ export default defineStore('total', () => {
     function updateData(range) {
         presentData.value = targetData.value
         targetData.value += Math.floor(Math.random() * range)
-        console.log("已触发")
-        console.log("presentData.value", presentData.value)
-        console.log("targetData.value", targetData.value)
+        // console.log("已触发")
+        // console.log("presentData.value", presentData.value)
+        // console.log("targetData.value", targetData.value)
     }
 
     return {presentData, targetData, updateData}

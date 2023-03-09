@@ -6,7 +6,7 @@ export default function (range,time){
     let tempData = ref([0,0])
     setInterval(()=>{
         totalData.updateData(range)
-        console.log("useData :",totalData.presentData,totalData.targetData)
+        // console.log("useData :",totalData.presentData,totalData.targetData)
         tempData.value[0]=totalData.presentData
         tempData.value[1]=totalData.targetData
     },time)

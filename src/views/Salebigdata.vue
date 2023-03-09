@@ -1,7 +1,7 @@
 <template>
   <div class="main">
-    <div v-show="true" class="company"></div>
-    <div v-show="true" class="leftTop">
+    <div v-show="showRef" class="company"></div>
+    <div v-show="showRef" class="leftTop">
       <div class="visionbox"></div>
       <n-row
       >
@@ -74,7 +74,7 @@
         </n-timeline>
       </div>
     </div>
-    <div v-show="true" class="leftmid">
+    <div v-show="showRef" class="leftmid">
       <div class="leftmiddetail">
         <n-icon>
           <AccessibilitySharp/>
@@ -97,7 +97,7 @@
       </div>
 
     </div>
-    <div v-show="true" class="leftbottom">
+    <div v-show="showRef" class="leftbottom">
       <div class="iconHead">
         <n-icon>
           <PieChart/>
@@ -199,7 +199,7 @@
         </n-grid>
       </div>
     </div>
-    <div class="mid">
+    <div class="mid" :style="showRef?'':'width:100%;height:100%;left:0px;top:0px;'">
 <!--      <n-gradient-text :size="16" color="#CBF7FF">-->
 <!--        实时大数据地图-->
 <!--      </n-gradient-text>-->
@@ -210,7 +210,7 @@
       </div>
       <div class="midMap" id="midMap"></div>
     </div>
-    <div v-show="true" class="midbottom">
+    <div v-show="showRef" class="midbottom">
       <div class="iconHead">
         <n-icon>
           <BarChart/>
@@ -219,7 +219,7 @@
       </div>
       <e-chart class="midstack" :option="testStack"/>
     </div>
-    <div v-show="true" class="rightTop">
+    <div v-show="showRef" class="rightTop">
       <n-grid x-gap="12" :cols="3">
         <n-gi>
           <n-space :size="0">
@@ -269,7 +269,7 @@
         </n-gi>
       </n-grid>
     </div>
-    <div v-show="true" class="rightmid">
+    <div v-show="showRef" class="rightmid">
       <div class="iconHead">
         <n-icon>
           <StatsChart/>
@@ -322,7 +322,7 @@
       </div>
 
     </div>
-    <div v-show="true" class="rightbottom">
+    <div v-show="showRef" class="rightbottom">
       <div class="iconHead">
         <n-icon>
           <Analytics/>
@@ -360,7 +360,7 @@ let testTable = useTable()
 
 let testPie = usePie()
 
-let {options,handleSelect} = useMenu()
+let {options,handleSelect,showRef} = useMenu()
 
 let testMap = useMap()
 
