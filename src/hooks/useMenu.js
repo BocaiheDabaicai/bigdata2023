@@ -1,8 +1,11 @@
 import {reactive,ref} from "vue";
 import {useMessage} from "naive-ui";
+import useControlStore from "../storage/saleBigData/useControlStore.js";
+import useMap from "./useMap.js";
 export default function () {
     const message = useMessage()
     const showRef = ref(true)
+    const control = useControlStore()
 
     let options = reactive([
         {
@@ -12,6 +15,9 @@ export default function () {
                 onClick:()=>{
                     // 连接地图
                     message.success("数据展示成功！")
+                    control.updateControl()
+                    console.log("in useMenu",control.controlData)
+                    useMap()
                 }
             },
             optionLabel:true
@@ -66,7 +72,7 @@ export default function () {
                 item.label = (item.optionLabel?"显示":"隐藏")+item.label.substring(2)
                 console.log(item)
             }
-            if(item.key === "fullScreen"){
+            if(item.key === key && item.key === "fullScreen"){
                 item.optionLabel = !item.optionLabel
                 item.label = (item.optionLabel?"全屏":"原图")+item.label.substring(2)
                 console.log(item)

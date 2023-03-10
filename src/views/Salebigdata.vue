@@ -327,7 +327,7 @@
         <n-icon>
           <Analytics/>
         </n-icon>
-        <text style="margin-left: 7px">常低温占比分析</text>
+        <text style="margin-left: 7px">销售实时排行</text>
       </div>
       <e-chart class="sortChart" :option="testSort"></e-chart>
     </div>
@@ -335,7 +335,7 @@
 </template>
 
 <script setup>
-import {ref} from "vue";
+import {ref,onMounted,nextTick} from "vue";
 import useData from "../hooks/useData.js";
 import useTable from "../hooks/useTable.js";
 import usePie from "../hooks/usePie.js";
@@ -362,7 +362,11 @@ let testPie = usePie()
 
 let {options,handleSelect,showRef} = useMenu()
 
-let testMap = useMap()
+// let testMap = useMap()
+onMounted(()=>{
+  console.log("onMounted")
+  useMap()
+})
 
 let testStack = useStack()
 

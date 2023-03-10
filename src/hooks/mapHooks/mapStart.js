@@ -9,9 +9,12 @@ import mapCover from "./components/mapCover.js";
 import milkCar from "./components/milkCar.js";
 //------------------Event-------------------------
 import mapScale from "../mapEvents/mapScale.js";
+//------------------Store-------------------------
+import useControlStore from "../../storage/saleBigData/useControlStore.js";
 
 
 export default function () {
+    let control = useControlStore()
 
     AMapLoader.load({
         "key": "55b4970fae20d60951cc56a77e77fbd3",              // 申请好的Web端开发者Key，首次调用 load 时必填
@@ -26,11 +29,18 @@ export default function () {
             zoom:4,
             mapStyle: 'amap://styles/blue',
         });
+
+        map.setZoom(control.controlZoom,true)
+        map.setCenter(control.controlCenter,true)
+
         // 106.623487,26.634874
         // 106.647156,26.635188
         milkIcon(map)
         // milkPath(map)
-        provinceIcon(map)
+        console.log("in mapState",control.controlData)
+        if (control.controlData){
+            provinceIcon(map)
+        }
         // provinceLine(map)
         headquarters(map)
         milkCar(map)
@@ -41,6 +51,15 @@ export default function () {
         * 5级图层省级
         * */
         // console.log(map)
+
+        setInterval(()=>{
+            console.log("map.getZoom()",typeof map.getZoom(),map.getZoom())
+            console.log("map.getCenter()",typeof map.getCenter(),map.getCenter())
+            control.setZoomAndCenter(map.getZoom(),map.getCenter())
+            console.log("control.controlZoom",control.controlZoom)
+            console.log("control.controlCenter",control.controlCenter)
+        },1000)
+
         return map
 
     }).catch(e => {
