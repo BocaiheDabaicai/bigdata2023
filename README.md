@@ -6,7 +6,8 @@
     ----vue3
     ----vite4
     ----vue-router4
-    ----pinia   (暂未接入)
+    ----pinia
+    ----axios及代理
     ----naiveUI
     ----高德地图API
     ----自定义hooks
