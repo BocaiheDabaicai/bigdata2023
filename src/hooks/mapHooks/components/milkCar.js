@@ -76,6 +76,104 @@ export default function (map) {
                 style: textStyle
             }
         },
+        {
+            name: '四号车',
+            position: [106.55714,26.581803],
+            zooms: [8, 20],
+            opacity: 1,
+            zIndex: 16,
+            icon,
+            text: {
+                content: '四号车',
+                direction: 'right',
+                offset: [-3, -5],
+                style: textStyle
+            }
+        },
+        {
+            name: '五号车',
+            position: [106.592846,26.629383],
+            zooms: [8, 20],
+            opacity: 1,
+            zIndex: 16,
+            icon,
+            text: {
+                content: '五号车',
+                direction: 'right',
+                offset: [-3, -5],
+                style: textStyle
+            }
+        },
+        {
+            name: '六号车',
+            position: [106.605549,26.611581],
+            zooms: [8, 20],
+            opacity: 1,
+            zIndex: 16,
+            icon,
+            text: {
+                content: '六号车',
+                direction: 'right',
+                offset: [-3, -5],
+                style: textStyle
+            }
+        },
+        {
+            name: '七号车',
+            position: [106.605549,26.611581],
+            zooms: [8, 20],
+            opacity: 1,
+            zIndex: 16,
+            icon,
+            text: {
+                content: '七号车',
+                direction: 'right',
+                offset: [-3, -5],
+                style: textStyle
+            }
+        },
+        {
+            name: '八号车',
+            position: [106.663399,26.667433],
+            zooms: [8, 20],
+            opacity: 1,
+            zIndex: 16,
+            icon,
+            text: {
+                content: '八号车',
+                direction: 'right',
+                offset: [-3, -5],
+                style: textStyle
+            }
+        },
+        {
+            name: '九号车',
+            position: [106.635418,26.644881],
+            zooms: [8, 20],
+            opacity: 1,
+            zIndex: 16,
+            icon,
+            text: {
+                content: '九号车',
+                direction: 'right',
+                offset: [-3, -5],
+                style: textStyle
+            }
+        },
+        {
+            name: '十号车',
+            position: [106.624569,26.634319],
+            zooms: [8, 20],
+            opacity: 1,
+            zIndex: 16,
+            icon,
+            text: {
+                content: '十号车',
+                direction: 'right',
+                offset: [-3, -5],
+                style: textStyle
+            }
+        },
     ];
     let markers = [];
     let layer = new AMap.LabelsLayer({

@@ -28,7 +28,7 @@ export default function (map) {
         {
             name: '公司总部',
             position: [106.529937,26.57145],
-            zooms: [8, 20],
+            zooms: [12, 20],
             opacity: 1,
             zIndex: 10,
             fold: true,
@@ -39,10 +39,10 @@ export default function (map) {
                 // 文字方向，有 icon 时为围绕文字的方向，没有 icon 时，则为相对 position 的位置
                 direction: 'bottom-center',
                 // 在 direction 基础上的偏移量
-                offset: [-12, 0],
+                offset: [-26, 36],
                 // 文字样式
                 style: {
-                    fontSize: 12,
+                    fontSize: 18,
                     fontWeight: 'normal',
                     fontFamily:'得意黑',
                     fillColor: '#008BF3',

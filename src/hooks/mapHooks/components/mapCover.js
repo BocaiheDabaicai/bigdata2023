@@ -18,5 +18,4 @@ export default function (map) {
         }
     });
     map.add(geojson);
-    // log.success('GeoJSON 数据加载完成')
 }

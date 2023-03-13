@@ -11,6 +11,7 @@ import milkCar from "./components/milkCar.js";
 import mapScale from "../mapEvents/mapScale.js";
 //------------------Store-------------------------
 import useControlStore from "../../storage/saleBigData/useControlStore.js";
+import provinceArea from "./components/provinceArea.js";
 
 
 export default function () {
@@ -35,15 +36,20 @@ export default function () {
 
         // 106.623487,26.634874
         // 106.647156,26.635188
-        milkIcon(map)
+        if (control.controlMilk){
+            milkIcon(map)
+        }
         // milkPath(map)
         console.log("in mapState",control.controlData)
         if (control.controlData){
             provinceIcon(map)
+            provinceArea(map)
         }
         // provinceLine(map)
         headquarters(map)
-        milkCar(map)
+        if (control.controlCars){
+            milkCar(map)
+        }
         mapCover(map)
         // mapScale(map)
         /*

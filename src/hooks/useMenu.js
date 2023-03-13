@@ -15,8 +15,8 @@ export default function () {
                 onClick:()=>{
                     // 连接地图
                     message.success("数据展示成功！")
-                    control.updateControl()
-                    console.log("in useMenu",control.controlData)
+                    control.updateCars()
+                    console.log("in useMenu",control.controlCars)
                     useMap()
                 }
             },
@@ -28,6 +28,9 @@ export default function () {
             props:{
                 onClick:()=>{
                     message.success("数据展示成功！")
+                    control.updateMilk()
+                    console.log("in useMenu",control.controlMilk)
+                    useMap()
                 }
             },
             optionLabel:true
@@ -38,6 +41,9 @@ export default function () {
             props:{
                 onClick:()=>{
                     message.success("数据展示成功！")
+                    control.updateProvince()
+                    console.log("in useMenu",control.controlData)
+                    useMap()
                 }
             },
             optionLabel:true
